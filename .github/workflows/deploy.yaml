@@ -10,6 +10,15 @@ jobs:
   first-job:
     # Especicamos el runner que se usará
     runs-on: ubuntu-latest
+    
     steps:
       - name: Hola mundo
-        run: echo "Hacemos pull del código"
+        run: echo "Hola mundo"
+
+  second-job:
+    # Especicamos el runner que se usará
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Hola mundo
+        run: echo "Hola mundo dos"
