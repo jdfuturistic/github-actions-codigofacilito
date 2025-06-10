@@ -1,15 +1,15 @@
-name: 'Deploy CodigoFacilito'
+name: 'Deploy to Server'
 
+# Evento / Trigger para el workflow
 on:
   push:
     branches:
       - main
 
 jobs:
-  deploy-codigofacilito:
+  first-job:
+    # Especicamos el runner que se usará
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hacemos pull del código"
-      - run: echo "Correr migraciones"
-      - run: echo "Generar binario"
-      - run: echo "Publicar versión"
+      - name: Hola mundo
+        run: echo "Hacemos pull del código"
