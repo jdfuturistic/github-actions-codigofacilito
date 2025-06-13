@@ -17,6 +17,7 @@ jobs:
 
   second-job:
     # Especicamos el runner que se usará
+    needs: first-job
     runs-on: ubuntu-latest
     
     steps:
